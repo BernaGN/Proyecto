@@ -21,6 +21,7 @@
         "laravelcollective/html": "^6.3",
         "laraveldaily/laravel-charts": "^0.1.29",
         "laraveles/spanish": "^1.5",
+        "munafio/chatify": "^1.5",
         "owen-it/laravel-auditing": "^13.0",
         "silviolleite/laravelpwa": "^2.0",
         "spatie/laravel-medialibrary": "^10.5",
