@@ -3,12 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\UserStoreRequest;
-use App\Http\Requests\UserUpdateRequest;
-use App\Models\BitacoraAcceso;
+use App\Models\Rol;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {
@@ -36,7 +33,7 @@ class UserController extends Controller
                     return $query->where('name', 'LIKE', '%' . $request->buscar . '%');
                 })
                 ->with('roles:name')->paginate(),
-            'roles' => Role::select('id', 'name')->get(),
+            'roles' => Rol::select('id', 'name')->get(),
             'buscar' => $request->buscar,
             'activo' => $request->activo,
         ]);
@@ -51,7 +48,7 @@ class UserController extends Controller
     {
         return view('sistema.usuarios.create', [
             'usuario' => new User(),
-            'roles' => Role::select('id', 'name')->get(),
+            'roles' => Rol::select('id', 'name')->get(),
         ]);
     }
     /**
@@ -88,7 +85,7 @@ class UserController extends Controller
     {
         return view('sistema.usuarios.edit', [
             'usuario' => $usuario->load('roles:id'),
-            'roles' => Role::select('id', 'name')->get(),
+            'roles' => Rol::select('id', 'name')->get(),
         ]);
     }
 

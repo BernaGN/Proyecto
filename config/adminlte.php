@@ -320,6 +320,46 @@ return [
                 ],
             ],
         ],
+        ['header' => 'Información del Sistema'],
+        [
+            'text' => 'Catálogos',
+            'icon' => 'nav-icon fas fa-table',
+            'submenu' => [
+                [
+                    'text' => 'Clientes',
+                ],
+                [
+                    'text' => 'Categorias',
+                ],
+                [
+                    'text' => 'Etiquetas',
+                ],
+                [
+                    'text' => 'Servicios',
+                ],
+                [
+                    'text' => 'Habilidades',
+                ],
+                [
+                    'text' => 'Proyectos',
+                ],
+            ],
+        ],
+        ['header' => 'Procesos del Sistema'],
+        [
+            'text' => 'Procesos',
+            'icon' => 'nav-icon fas fa-edit',
+            'submenu' => [
+
+            ],
+        ],
+        [
+            'text' => 'Reportes',
+            'icon' => 'nav-icon fas fa-file-alt',
+            'submenu' => [
+
+            ],
+        ],
     ],
 
     /*
