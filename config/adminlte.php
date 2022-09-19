@@ -318,6 +318,12 @@ return [
                     'can' => 'roles.index',
                     'active' => ['admin/roles*'],
                 ],
+                [
+                    'text' => 'Auditorias',
+                    'route' => 'auditorias.index',
+                    'can' => 'auditorias.index',
+                    'active' => ['admin/auditorias*'],
+                ],
             ],
         ],
         ['header' => 'Información del Sistema'],
@@ -327,21 +333,39 @@ return [
             'submenu' => [
                 [
                     'text' => 'Clientes',
+                    'route' => 'clientes.index',
+                    'can' => 'clientes.index',
+                    'active' => ['admin/clientes*'],
                 ],
                 [
                     'text' => 'Categorias',
+                    'route' => 'categorias.index',
+                    'can' => 'categorias.index',
+                    'active' => ['admin/categorias*'],
                 ],
                 [
                     'text' => 'Etiquetas',
+                    'route' => 'etiquetas.index',
+                    'can' => 'etiquetas.index',
+                    'active' => ['admin/etiquetas*'],
                 ],
                 [
                     'text' => 'Servicios',
+                    'route' => 'servicios.index',
+                    'can' => 'servicios.index',
+                    'active' => ['admin/servicios*'],
                 ],
                 [
                     'text' => 'Habilidades',
+                    'route' => 'habilidades.index',
+                    'can' => 'habilidades.index',
+                    'active' => ['admin/habilidades*'],
                 ],
                 [
                     'text' => 'Proyectos',
+                    'route' => 'proyectos.index',
+                    'can' => 'proyectos.index',
+                    'active' => ['admin/proyectos*'],
                 ],
             ],
         ],
