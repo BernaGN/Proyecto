@@ -56,11 +56,6 @@
     </div>
     <!-- /.row -->
 
-    <x-modals.modal-eliminar-restaurar type="delete" :value="$usuarios" route="usuarios.destroy" method="DELETE"
-        message="Desactivar" />
-    <x-modals.modal-eliminar-restaurar type="restore" :value="$usuarios" route="user-restore" method="PUT"
-        message="Restaurar" bgColor="primary" />
-
     <!-- Modal -->
     <x-modals.confirm text="Editar" />
     <div class="modal fade" id="cambiar-contraseña" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

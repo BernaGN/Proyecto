@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "asantibanez/laravel-blade-sortable": "*",
         "cviebrock/eloquent-sluggable": "^9.0",
         "diglactic/laravel-breadcrumbs": "^8.0",
         "dyrynda/laravel-model-uuid": "^6.6",
