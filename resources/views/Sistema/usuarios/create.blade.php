@@ -24,18 +24,6 @@
                                 {!! $errors->first('name', '<div class="invalid-tooltip">:message</div>') !!}
                             </div>
                             <div class="form-group position-relative">
-                                <label class="h5">Apellido Paterno</label>
-                                <input class="form-control {{ $errors->has('apellido_paterno') ? ' is-invalid' : '' }}"
-                                    name="apellido_paterno" id="apellido_paterno" value="{{ old('apellido_paterno') }}">
-                                {!! $errors->first('apellido_paterno', '<div class="invalid-tooltip">:message</div>') !!}
-                            </div>
-                            <div class="form-group position-relative">
-                                <label class="h5">Apellido Materno</label>
-                                <input class="form-control {{ $errors->has('apellido_materno') ? ' is-invalid' : '' }}"
-                                    name="apellido_materno" id="apellido_materno" value="{{ old('apellido_materno') }}">
-                                {!! $errors->first('apellido_materno', '<div class="invalid-tooltip">:message</div>') !!}
-                            </div>
-                            <div class="form-group position-relative">
                                 <label class="h5">Email</label>
                                 <input class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email"
                                     type="text" value="{{ old('email') }}">
